@@ -1,4 +1,4 @@
-import { VariantProps, cva } from "class-variance-authority";
+import { cva, type VariantProps } from 'class-variance-authority';
 import { forwardRef } from "react";
 import { classNames } from "../../styling";
 import { BASE_BUTTON_STYLES, BUTTON_STYLES } from "./styles";
@@ -63,9 +63,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       fullWidth = false,
       disabled = false,
       ...rest
-    }: ButtonProps,
-    ref,
-  ) => {
+    }: ButtonProps, ref) => {
     const [size, buttonVariant] = variant.split('/') as [ButtonStylesProps['size'], ButtonStylesProps['variant']]
 
     return (
