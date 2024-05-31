@@ -3,24 +3,24 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import Button, { ButtonVariant, buttonStyles } from "./Button";
 
 describe('Button/Button', () => {
-    describe.each([
-        ['sm/primary', buttonStyles({ size: 'sm', variant: 'primary', disabled: false, fullWidth: false })],
-        ['md/primary', buttonStyles({ size: 'md', variant: 'primary', disabled: false, fullWidth: false })],
-        ['xl/primary', buttonStyles({ size: 'xl', variant: 'primary', disabled: false, fullWidth: false })],
-        ['sm/secondary', buttonStyles({ size: 'sm', variant: 'secondary', disabled: false, fullWidth: false })],
-        ['md/secondary', buttonStyles({ size: 'md', variant: 'secondary', disabled: false, fullWidth: false })],
-        ['xl/secondary', buttonStyles({ size: 'xl', variant: 'secondary', disabled: false, fullWidth: false })],
-        ['sm/tertiary', buttonStyles({ size: 'sm', variant: 'tertiary', disabled: false, fullWidth: false })],
-        ['md/tertiary', buttonStyles({ size: 'md', variant: 'tertiary', disabled: false, fullWidth: false })],
-        ['xl/tertiary', buttonStyles({ size: 'xl', variant: 'tertiary', disabled: false, fullWidth: false })],
-    ])('variant: %s', (variant, expectedClasses) => {
-        it(`renders with correct classes for variant': ${variant}`, () => {
-            const { getByText } = render(<Button variant={variant as ButtonVariant}>Button here</Button>)
-            expect(getByText('Button here')).toHaveClass(expectedClasses)
-        })
+  describe.each([
+    ['sm/primary', buttonStyles({ size: 'sm', variant: 'primary', disabled: false, fullWidth: false })],
+    ['md/primary', buttonStyles({ size: 'md', variant: 'primary', disabled: false, fullWidth: false })],
+    ['xl/primary', buttonStyles({ size: 'xl', variant: 'primary', disabled: false, fullWidth: false })],
+    ['sm/secondary', buttonStyles({ size: 'sm', variant: 'secondary', disabled: false, fullWidth: false })],
+    ['md/secondary', buttonStyles({ size: 'md', variant: 'secondary', disabled: false, fullWidth: false })],
+    ['xl/secondary', buttonStyles({ size: 'xl', variant: 'secondary', disabled: false, fullWidth: false })],
+    ['sm/tertiary', buttonStyles({ size: 'sm', variant: 'tertiary', disabled: false, fullWidth: false })],
+    ['md/tertiary', buttonStyles({ size: 'md', variant: 'tertiary', disabled: false, fullWidth: false })],
+    ['xl/tertiary', buttonStyles({ size: 'xl', variant: 'tertiary', disabled: false, fullWidth: false })],
+  ])('variant: %s', (variant, expectedClasses) => {
+    it(`renders with correct classes for variant': ${variant}`, () => {
+      const { getByText } = render(<Button variant={variant as ButtonVariant}>Button here</Button>)
+      expect(getByText('Button here')).toHaveClass(expectedClasses)
     })
+  })
 
-    it('renders the correct content', () => {
+  it('renders the correct content', () => {
     const { getByText } = render(<Button variant="md/primary">Button here</Button>)
 
     expect(getByText('Button here')).toHaveTextContent('Button here')

@@ -1,6 +1,6 @@
 import { VariantProps, cva } from "class-variance-authority";
 import { forwardRef } from "react";
-import { classNames } from "../styling";
+import { classNames } from "../../styling";
 import { BASE_BUTTON_STYLES, BUTTON_STYLES } from "./styles";
 
 export const buttonStyles = cva(BASE_BUTTON_STYLES, {
