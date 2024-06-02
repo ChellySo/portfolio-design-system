@@ -2,7 +2,7 @@ import { classNames } from '@/styling'
 import { cva, type VariantProps } from 'class-variance-authority'
 import { forwardRef } from 'react'
 
-export const typographyStyles = cva('font-semibold', {
+export const typographyStyles = cva('font-medium', {
     variants: {
         variant: {
             fushia: 'text-fushia-400 font-mono',

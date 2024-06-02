@@ -2,7 +2,7 @@ export const BASE_BUTTON_STYLES =
   'flex space-x-xs items-center justify-center duration-150 outline-none ring-offset-transparent focus-visible:outline-none'
 export const BUTTON_STYLES = {
   default:
-    'py-1.5 px-6 rounded-lg font-bold focus-visible:ring-1 focus-visible:ring-offset-2 focus-visible:ring-fushia-500',
+    'py-1.5 px-6 rounded-lg font-mono font-medium focus-visible:ring-1 focus-visible:ring-offset-2 focus-visible:ring-fushia-500',
   primary:
     'bg-fushia-400 text-purple-200 hover:bg-fushia-300 active:bg-fushia-500 disabled:bg-purple-100 disabled:text-purple-400',
   secondary:
