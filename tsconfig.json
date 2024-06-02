@@ -9,6 +9,7 @@
     "paths": {
       "@/*": ["src/*"]
     },
+     "types": ["jest", "@testing-library/jest-dom", "node"],
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -24,6 +25,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["src", "jest.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

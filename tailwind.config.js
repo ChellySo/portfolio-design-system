@@ -1,9 +1,66 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+// export default {
+//   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+//   theme: {
+//     extend: {},
+//   },
+//   plugins: [],
+// }
+module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  theme: {
-    extend: {},
-  },
   plugins: [],
+  theme: {
+    extend: {
+      colors: {
+        'purple-100': '#F2EEF5',
+        'purple-200': '#F8EFFF',
+        'purple-300': '#EFDBFF',
+        'purple-400': '#A68BBC',
+        'purple-800': '#3D2351',
+        'purple-900': '#2A113E',
+        'fushia-100': '#FEDFFE',
+        'fushia-200': '#FCBFFD',
+        'fushia-300': '#F987FC',
+        'fushia-400': '#F85FFB',
+        'fushia-500': '#D52AD9',
+      },
+      fontSize: {
+        'heading-1': ['32px', { lineHeight: '40px' }],
+        'heading-2': ['24px', { lineHeight: '30px' }],
+        'heading-3': ['20px', { lineHeight: '24px' }],
+        'heading-4': ['16px', { lineHeight: '20px' }],
+        'heading-5': ['14px', { lineHeight: '18px' }],
+        'heading-large': ['48px', { lineHeight: '54px' }],
+        sm: ['12px', { lineHeight: '16px' }],
+        md: ['14px', { lineHeight: '22px' }],
+        lg: ['16px', { lineHeight: '24px' }],
+        xl: ['40px', { lineHeight: '60px' }],
+      },
+      screens: {
+        '2xs': '375px',
+        xs: '768px',
+        sm: '1024px',
+        md: '1280px',
+        lg: '1440px',
+        xl: '1920px',
+        '2xl': '2560px',
+      },
+      spacing: {
+        '3xs': '2px',
+        '2xs': '4px',
+        xs: '8px',
+        sm: '12px',
+        md: '16px',
+        lg: '20px',
+        xl: '24px',
+        '2xl': '32px',
+        '3xl': '40px',
+        '4xl': '48px',
+        '5xl': '56px',
+        '6xl': '64px',
+        '7xl': '72px',
+        '8xl': '80px',
+      },
+    },
+  },
 }
-
