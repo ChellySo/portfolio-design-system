@@ -12,6 +12,10 @@ type Story = StoryObj<typeof Badge>
 
 export const badgeWithChildren: Story = {
     render: () => (
-        <Badge>Badge</Badge>
+        <div>
+            <Badge className="mx-2">ReactJS</Badge>
+            <Badge className="mx-2">TypeScript</Badge>
+            <Badge className="mx-2">Storybook</Badge>
+        </div>
     )
 }
