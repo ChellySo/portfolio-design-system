@@ -5,15 +5,7 @@ const meta: Meta<typeof Heading> = {
     title: 'Design system/Heading',
     component: Heading,
     tags: ['autodocs'],
-    argTypes: {
-        variant: {
-            control: {
-                type: 'select',
-                options: ['h1', 'h2', 'h3', 'h4', 'h5'],
-            },
-        },
-    },
-}
+} satisfies Meta<typeof Heading>
 
 export default meta
 type Story = StoryObj<typeof Heading>
