@@ -2,7 +2,7 @@ import { classNames } from '@/styling'
 import { cva, type VariantProps } from 'class-variance-authority'
 import { forwardRef } from 'react'
 
-export const largeHeadingStyles = cva(classNames('font-semibold font-sans'), {
+export const largeHeadingStyles = cva(classNames('font-semibold'), {
     variants: {
         variant: {
             large: 'text-heading-lg',
