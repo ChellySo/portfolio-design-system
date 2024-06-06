@@ -3,6 +3,17 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/portfolio-ui-umd.cjs",
+  "module": "dist/portfolio-ui.js",
+  "exports": {
+    ".": {
+      "import": "./dist/portfolio-ui.js",
+      "require": "./dist/portfolio-ui-umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -19,6 +30,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwind-merge": "^2.3.0",
+    "vite-plugin-dts": "^3.9.1",
     "vite-tsconfig-paths": "^4.3.2"
   },
   "devDependencies": {
