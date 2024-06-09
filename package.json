@@ -1,6 +1,5 @@
 {
-  "name": "portfolio-designsystem",
-  "private": true,
+  "name": "@chellycodeui/portfolio-designsystem",
   "version": "0.0.0",
   "type": "module",
   "files": [
@@ -67,5 +66,9 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
