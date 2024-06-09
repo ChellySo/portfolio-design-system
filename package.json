@@ -4,19 +4,20 @@
   "version": "0.0.0",
   "type": "module",
   "files": [
-    "dist"
+    "dist",
+    "tailwind.config.cjs"
   ],
-  "main": "dist/portfolio-ui-umd.cjs",
-  "module": "dist/portfolio-ui.js",
+  "main": "./dist/portfolio-designsystem-umd.cjs",
+  "module": "./dist/portfolio-designsystem.js",
   "exports": {
     ".": {
-      "import": "./dist/portfolio-ui.js",
-      "require": "./dist/portfolio-ui-umd.cjs"
+      "import": "./dist/portfolio-designsystem.js",
+      "require": "./dist/portfolio-designsystem-umd.cjs"
     }
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && npx tailwindcss build -o ./dist/index.css -c tailwind.config.js",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
