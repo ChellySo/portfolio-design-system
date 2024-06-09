@@ -13,8 +13,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, './src/components/index.ts'),
-      name: 'portfolio-user-interface',
-      fileName: 'portfolio-ui'
+      name: 'Portfolio-designsystem',
+      fileName: 'portfolio-designsystem'
     },
     rollupOptions: {
       external: ['react', 'react-dom'],

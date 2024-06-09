@@ -1,1 +1,1 @@
-export * from './LogoCS';
+export { default as LogoCS } from './LogoCS';
