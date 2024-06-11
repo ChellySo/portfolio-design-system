@@ -1,16 +1,12 @@
 /** @type {import('tailwindcss').Config} */
-// export default {
-//   content: ["./src/**/*.{js,jsx,ts,tsx}"],
-//   theme: {
-//     extend: {},
-//   },
-//   plugins: [],
-// }
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   plugins: [],
   theme: {
     extend: {
+      fontFamily: {
+        sansserif: ['sans-serif'],
+      },
       colors: {
         'purple-100': '#F2EEF5',
         'purple-200': '#F8EFFF',
@@ -30,9 +26,9 @@ module.exports = {
         'heading-3': ['20px', { lineHeight: '24px' }],
         'heading-4': ['16px', { lineHeight: '20px' }],
         'heading-5': ['14px', { lineHeight: '18px' }],
-        'heading-lg': ['40px', { lineHeight: '48px' }],
-        'heading-xl': ['56px', { lineHeight: '72px' }],
-        'heading-xxl': ['64px', { lineHeight: '88px' }],
+        'heading-lg': ['60px', { lineHeight: '70px' }],
+        'heading-xl': ['80px', { lineHeight: '90px' }],
+        'heading-xxl': ['90px', { lineHeight: '100px' }],
         sm: ['12px', { lineHeight: '16px' }],
         md: ['14px', { lineHeight: '22px' }],
         lg: ['16px', { lineHeight: '24px' }],
