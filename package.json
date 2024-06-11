@@ -4,7 +4,7 @@
   "type": "module",
   "files": [
     "dist",
-    "tailwind.config.cjs"
+    "tailwind.config.js"
   ],
   "main": "./dist/portfolio-designsystem-umd.cjs",
   "module": "./dist/portfolio-designsystem.js",
