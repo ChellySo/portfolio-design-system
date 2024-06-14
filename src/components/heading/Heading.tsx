@@ -4,7 +4,7 @@ import { PolymorphicComponentPropsWithRef, PolymorphicRef } from '@/types'
 import { cva, type VariantProps } from 'class-variance-authority'
 import React, { forwardRef } from 'react'
 
-export const headingStyles = cva('font-semibold', {
+export const headingStyles = cva('font-medium', {
     variants: {
         variant: {
             h1: 'text-heading-1',
